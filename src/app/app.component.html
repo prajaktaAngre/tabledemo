@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row ">
+    <div class="col-sm-12 bg-blue">
+      <app-header  (newItemEvent)="crossOffItem($event)"></app-header>
+    </div>
+    <div class="col-sm-12">
+      <app-section [storeArrayChild]="dataStore" >
+      </app-section>
+    </div>
+  </div>
+</div>

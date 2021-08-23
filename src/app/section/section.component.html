@@ -1,0 +1,21 @@
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">id</th>
+           
+            <th scope="col">userId</th>
+            <th scope="col">name</th>
+            <th scope="col">body</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let array of storeArrayChild">
+            <th scope="row">{{array.id}} </th>
+            <th scope="row">{{array.userId}} </th>
+
+            <th scope="row">{{array.title}} </th>
+            <th scope="row">{{array.body}} </th>
+
+
+    </tbody>
+</table>
