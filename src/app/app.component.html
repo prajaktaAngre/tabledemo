@@ -1,24 +1,15 @@
 <div class="container">
-  <div class="row ">
+    
+  <div class="row">
     <div class="col-sm-12 bg-blue">
       <app-header (newItemEvent)="crossOffItem($event)"></app-header>
     </div>
   </div>
-  <div class="row">
-    <div class="col-sm-3" *ngFor="let array of dataStore">
-      <!-- <app-section [storeArrayChild]="dataStore" > -->
-      <!-- <app-card [storeArrayChild]="dataStore" *ngFor="let item of dataStore">
-          <div > -->
+  <div class="row pt-2">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let array of dataStore">
       <div class="">
-        <!-- <app-section [storeArrayChild]="dataStore" > -->
         <app-card [storeArrayChild]="array">
         </app-card>
-        <!-- </app-section> -->
-
       </div>
-
     </div>
- 
-
-
   </div>

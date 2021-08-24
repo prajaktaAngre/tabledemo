@@ -1,3 +1,32 @@
-.custom-img {
+.customCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    min-height: 351px;
+    
+}
+img.customCard-img-top.custom-img{
     height: 140px;
+}
+h5.customCard-title {
+    font-size: 16px;
+}
+.customCard-body {
+    padding: 10px;
+}
+p.customCard-text {
+    font-size: 13px;
+}
+.class-name {
+    display: block;
+    white-space: nowrap;
+    width: 15em;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

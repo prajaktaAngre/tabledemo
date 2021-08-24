@@ -7,15 +7,18 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 export class CardComponent implements OnInit {
   @Input() storeArrayChild: any;
-  
+  istrue:boolean=true;
+
   constructor() { }
  
   ngOnInit(): void {
     
   }
   showDetails(){
-  console.log(this.storeArrayChild)
+  console.log()
   // console.log(this.dataStore)
+  this.istrue=!this.istrue;
+  
   }
 
 }
