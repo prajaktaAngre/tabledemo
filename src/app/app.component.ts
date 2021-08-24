@@ -9,12 +9,14 @@ import { GetApiService } from './get-api.service';
 export class AppComponent implements OnInit{
   title = 'task3';
   dataStore:any;
+  constructor(public api:GetApiService){}
   crossOffItem(value:any){
     this.api.apiCall().subscribe((data: any)=>{
       this.dataStore= (data);
+      console.log(this.dataStore)
       })
   }
-  constructor(public api:GetApiService){}
+  
   ngOnInit(){
     
   }
