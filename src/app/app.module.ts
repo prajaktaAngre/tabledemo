@@ -11,6 +11,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatButtonModule} from '@angular/material/button';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,8 +29,9 @@ import { CommonModule } from '@angular/common';
     BrowserAnimationsModule,
     FlexLayoutModule,
     FormsModule,
-    CommonModule 
-
+    CommonModule ,
+    MatCheckboxModule,
+    MatButtonModule
 
   ],
   providers: [],

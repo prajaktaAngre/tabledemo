@@ -1,4 +1,4 @@
-import { Component, OnInit,Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -7,18 +7,20 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 export class CardComponent implements OnInit {
   @Input() storeArrayChild: any;
-  istrue:boolean=true;
+  istrue: boolean = true;
+  changeText: boolean;
+  constructor() {
+    this.changeText = false;
+ }
 
-  constructor() { }
- 
   ngOnInit(): void {
-    
-  }
-  showDetails(){
-  console.log()
-  // console.log(this.dataStore)
-  this.istrue=!this.istrue;
-  
-  }
 
+  }
+  showDetails() {
+    console.log()
+    // console.log(this.dataStore)
+    this.istrue = !this.istrue;
+  }
+  
+    
 }
